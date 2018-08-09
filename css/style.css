@@ -398,6 +398,11 @@ a:hover {
   .container {
     flex-flow: wrap;
   }
+  .main {
+    box-sizing: border-box;
+    padding-right: 0;
+    width: calc(100% - 250px); 
+  }
   .right {
     padding-left: 0;
     width: 100%;
@@ -418,72 +423,83 @@ a:hover {
     background-image: none; }
   .main {
     padding-left: 0;
-    width: 100%; }
+    width: 100%; 
+  }
   .left {
     width: 50%;
-    order: 0; }
+    order: 0; 
+  }
+  .widget-search {
+    margin-top: 30px;
+  }
   .right {
+    margin-top: 30px;
     width: 50%;
-    padding-left: 20px;}
+    padding-left: 20px;
+  }
     }                 
 @media (max-width: 768px) {
-  .left {
-    order: 0;
+.header-menu__list {
+    display: none;
+    width: 100%; 
+  }
+  .header-menu li {
+    float: none; 
+  }
+  .header-menu a {
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
     width: 100%;
+    text-align: center; 
+  }
+  .header-menu__item.active a {
+    background: rgba(255, 255, 255, 0.1); }
+  .header-menu__btn {
+    display: flex; 
+  }
+  .left {
+    padding-right: 0;
+    width: 100%; 
+  }
+  .widget-search {
+    margin-top: 30px;
   }
   .right {
     padding-left: 0;
-    width: 100%; 
+    width: 100%; } 
   }
-  .main {
-    width: 100%;
-  }
-  .header-menu {
-    display: table;
-    width: 100%;
-  }
-  .header-menu__list {
-    display: none;
-    flex-direction: column;
-    text-align: center;
-  }
-  .header-menu__btn {
-    display: block;
-    margin: 10px auto 3px;
-  }
-  .header-menu__item a{
-    margin: 0;
-  }
-}
 @media  (max-width: 640px) {
-  .left {
-    order: 0;
+  .header-logo__image {
+    display: none; 
+  }
+ .left {
     width: 100%;
-    padding: 0;
+  }
+  .widget-search {
+    margin-top: 10px;
   }
   .right {
     width: 100%;
-    padding: 0; 
+    padding: 0;
+    margin-top: 5px;
   }
-  .main {
-    margin: 20px 0 0;
-    padding: 0; }
+   .main {
+    margin: 5px 0 0;
+    padding: 0; }  
   .content-item {
-    margin: 0 0 20px;
-    width: 100%;
+    margin: 0 0 5px;
+    width: 100%; 
   }
   .content-item img {
-    width: 100%;
-  }
+     width: 100%; 
+    }
   .footer {
-    margin: 0 0 20px; 
-  }
+     margin: 0 0 20px; }
   .footer .footer-top,
   .footer .footer-bottom {
-    margin: 0; 
-  }
+     margin: 0; }
   .footer .footer-widget {
-    margin: 0 0 20px;
-    width: 100%; 
-  } 
+      margin: 0 0 20px;
+      width: 100%; }
 }
